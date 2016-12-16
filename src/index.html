@@ -6,96 +6,111 @@
   </head>
   <body>
 
-    <div class="hero">
-      <img src="./assets/hero-image-poy.svg">
+    <%= t.include("./partials/_ad.html", { type: "banner" }) %>
+
+    <div class="inner">
+      <nav class="top-bar">
+        <a class="logo" href="http://seattletimes.com">
+          <img src="./assets/logo-transparent.png">
+        </a>
+      </nav>
+
+      <div class="hero">
+        <img src="./assets/hero-image-poy.svg">
+      </div>
+
+      <p class="byline">Introduction by <b>Tyrone Beason</b>, Pacific NW magazine writer<br> Photographs by Seattle Times staff photographers</p>
+
+      <div class="story">
+        <p>Usually on New Year’s Day, we turn our attention to the future and contemplate what will be.</p>
+        <p>But 2016, a strange and turbulent year by any measure, won’t let go that easily.</p>
+        <p>Even for those not suffering from postelection blues and obsessive thoughts of what could have been, the last year warrants reflection. And the images taken by Seattle Times photographers over that time offer the perfect portals through which to gaze at what has passed.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id == 1) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>Certainly the strangest night of the year came on Election Day, when Republican Donald Trump handily garnered enough electoral votes to win the presidency, defying nearly all expectations, including those of many of his supporters. You can see the shock on the faces of Trump devotees in Dean Rutz’s image from an election gathering in Bellevue, as attendees realize they will be the ones holding the victory party, not Democrat Hillary Clinton’s by-then-flabbergasted backers.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id > 1 && row.id < 4) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>Erika Schultz brings dignity and humanity to her portrait of an 8-year-old Bhutanese immigrant sharing a ride in a toy convertible in Tukwila, where she and her family recently resettled after fleeing their homeland and living in a refugee camp in Nepal.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id > 3 && row.id < 6) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>The spirit of protest characterized 2016, both nationally and locally. Alan Berner’s image from the Standing Rock oil-pipeline protest in North Dakota places us in the Pacific Northwest side-by-side with a demonstrator from the Kickapoo Nation in Kansas.</p>
+        <p>Steve Ringman’s dramatic picture of Seattle Police pepper-spraying in his direction as they carry out crowd-control measures at the annual May Day protest is enough to make the viewer’s eyes sting the way Ringman’s did after snapping the photo.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id > 5 && row.id < 8) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>You can’t help but smile over Ellen M. Banner’s image of students receiving cheers and high-fives from an assembled group of African-American men as they start their day at South Shore PK-8 School in Seattle.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id == 8) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>Outrage ruled last year, too. Bettina Hansen’s image of a homeless woman packing a load of her belongings under Interstate 5 in Seattle, part of an investigation into the flawed way the city conducted sweeps of homeless encampments, helped raise serious human-rights questions for a region that prides itself on social consciousness.</p>
+      </div>
+      
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id > 8 && row.id < 12) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>Photojournalism can inspire, delight and reassure as much as provoke, of course. And if there were ever a year that needed antidotes to bitterness, cynicism, scapegoating and disillusionment, it was 2016.</p>
+        <p>Times photographers captured scenes that remind us what we’re all about in the Northwest, from our social openness to our reverence for nature to our fanaticism about sports, while reinforcing universal truths.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id > 11 && row.id < 15) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <div class="story">
+        <p>And Ken Lambert captures hope in a story of tragedy in his unconventional portrait of Daniel Lyon Jr., a firefighter who almost died from burns while battling the 2015 Twisp wildfire. The image is a close-up of Lyon’s sunglasses, the pair that saved his eyes the day he suffered his injuries.</p>
+        <p>The picture not only illustrates the preciousness of Lyon’s shades but of life itself.</p>
+      </div>
+
+      <% json.gallery.forEach(function(row) { %>
+        <% if (row.id > 14) { %>
+          <%= t.include("./_photo.html", row) %>
+        <% } %>
+      <% }) %>
+
+      <%= t.include("./partials/_ad.html", { type: "bannerBottom" }) %>
+
     </div>
 
-    <p class="byline">Introduction by <b>Tyrone Beason</b>, Pacific NW magazine writer<br> Photographs by Seattle Times staff photographers</p>
-
-    <div class="story">
-      <p>Usually on New Year’s Day, we turn our attention to the future and contemplate what will be.</p>
-      <p>But 2016, a strange and turbulent year by any measure, won’t let go that easily.</p>
-      <p>Even for those not suffering from postelection blues and obsessive thoughts of what could have been, the last year warrants reflection. And the images taken by Seattle Times photographers over that time offer the perfect portals through which to gaze at what has passed.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id == 1) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>Certainly the strangest night of the year came on Election Day, when Republican Donald Trump handily garnered enough electoral votes to win the presidency, defying nearly all expectations, including those of many of his supporters. You can see the shock on the faces of Trump devotees in Dean Rutz’s image from an election gathering in Bellevue, as attendees realize they will be the ones holding the victory party, not Democrat Hillary Clinton’s by-then-flabbergasted backers.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id > 1 && row.id < 4) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>Erika Schultz brings dignity and humanity to her portrait of an 8-year-old Bhutanese immigrant sharing a ride in a toy convertible in Tukwila, where she and her family recently resettled after fleeing their homeland and living in a refugee camp in Nepal.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id > 3 && row.id < 6) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>The spirit of protest characterized 2016, both nationally and locally. Alan Berner’s image from the Standing Rock oil-pipeline protest in North Dakota places us in the Pacific Northwest side-by-side with a demonstrator from the Kickapoo Nation in Kansas.</p>
-      <p>Steve Ringman’s dramatic picture of Seattle Police pepper-spraying in his direction as they carry out crowd-control measures at the annual May Day protest is enough to make the viewer’s eyes sting the way Ringman’s did after snapping the photo.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id > 5 && row.id < 8) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>You can’t help but smile over Ellen M. Banner’s image of students receiving cheers and high-fives from an assembled group of African-American men as they start their day at South Shore PK-8 School in Seattle.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id == 8) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>Outrage ruled last year, too. Bettina Hansen’s image of a homeless woman packing a load of her belongings under Interstate 5 in Seattle, part of an investigation into the flawed way the city conducted sweeps of homeless encampments, helped raise serious human-rights questions for a region that prides itself on social consciousness.</p>
-    </div>
-    
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id > 8 && row.id < 12) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>Photojournalism can inspire, delight and reassure as much as provoke, of course. And if there were ever a year that needed antidotes to bitterness, cynicism, scapegoating and disillusionment, it was 2016.</p>
-      <p>Times photographers captured scenes that remind us what we’re all about in the Northwest, from our social openness to our reverence for nature to our fanaticism about sports, while reinforcing universal truths.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id > 11 && row.id < 15) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
-
-    <div class="story">
-      <p>And Ken Lambert captures hope in a story of tragedy in his unconventional portrait of Daniel Lyon Jr., a firefighter who almost died from burns while battling the 2015 Twisp wildfire. The image is a close-up of Lyon’s sunglasses, the pair that saved his eyes the day he suffered his injuries.</p>
-      <p>The picture not only illustrates the preciousness of Lyon’s shades but of life itself.</p>
-    </div>
-
-    <% json.gallery.forEach(function(row) { %>
-      <% if (row.id > 14) { %>
-        <%= t.include("./_photo.html", row) %>
-      <% } %>
-    <% }) %>
+    <%= t.include("./partials/_navBottom.html") %>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>

@@ -1,15 +1,19 @@
 @import "seattletimes";
 
 body {
+  background-color: #212121;
+}
+
+.inner {
   max-width: 1200px;
   margin: auto;
-  background-color: #212121;
   color: lightgray;
 }
 
 .hero {
   max-width: 860px;
   margin: auto;
+  margin-top: 20px;
 }
 
 .story {
@@ -50,6 +54,10 @@ p {
   font-style: inherit;
   line-height: 1.8em;
   margin-bottom: 0;
+
+  @media @mobile {
+    font-size: 14px;
+  }
 }
 
 .container {
@@ -107,6 +115,33 @@ p {
 
       @media @tablet {
         font-size: 14px;
+      }
+    }
+  }
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &.top-bar {
+    border-bottom: 1px solid lightgray;
+    position: relative;
+
+    .logo {
+      width: 100%;
+      position: relative;
+      top: 30px;
+      text-align: center;
+      display: block;
+
+      img {
+        box-sizing: content-box;
+        height: 30px;
+        background: #212121;
+        padding: 6px 10px;
+        border: none;
       }
     }
   }
