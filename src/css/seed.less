@@ -11,30 +11,28 @@ body {
 }
 
 .hero {
-  max-width: 860px;
+  line-height: 0;
   margin: auto;
-  margin-top: 20px;
-}
+  margin-top: 40px;
+  .display-flex();
+  .align-items(center);
+  background: #141416;
 
-.story {
-  margin: 40px auto;
-  margin-bottom: 0;
-  padding: 0 20px;
-  border-bottom: 1px solid gray;
-  padding-bottom: 40px;
+  .left, .right {
+    .flex(1);
+  }
 
-  p {
-    @media @tablet {
-      font-size: 22px;
-    }
-    @media @mobile {
-      font-size: 20px;
+  @media @mobile {
+    display: block;
+    background: none;
+
+    .right {
+      padding-top: 30px;
     }
   }
 }
 
 p {
-  font-style: italic;
   font-size: 24px;
   max-width: 720px;
   margin: auto;
@@ -46,14 +44,74 @@ p {
   }
 }
 
+.story {
+  .story-inner {
+    max-width: 860px;
+    margin: auto;
+  }
+
+  margin: 40px auto;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0 20px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+
+  .story-flex {
+    .display-flex();
+
+    @media @mobile {
+      display: block;
+    }
+  }
+
+  p {
+    max-width: 860px;
+    @media @tablet {
+      font-size: 22px;
+    }
+    @media @mobile {
+      font-size: 20px;
+    }
+  }
+
+  .left {
+    .flex(5);
+  }
+
+  .right {
+    .flex(2);
+    color: @df-border-gray;
+    font-family: @df-sans;
+    margin-left: 50px;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+
+    .join {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    @media @mobile {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+}
+
 .byline {
   font-family: @df-sans;
   font-size: 16px;
   text-align: center;
   padding-top: 20px;
-  font-style: inherit;
   line-height: 1.8em;
   margin-bottom: 0;
+  margin-top: 20px;
 
   @media @mobile {
     font-size: 14px;
@@ -81,7 +139,6 @@ p {
 
   .date {
     font-family: @df-sans;
-    padding-top: 4px;
     font-size: 16px;
 
     @media @tablet {
@@ -145,4 +202,11 @@ nav {
       }
     }
   }
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  font-family: @df-sans;
+  font-size: 14px;
 }

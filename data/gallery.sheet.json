@@ -1,14 +1,6 @@
 [
   {
     "id": 1,
-    "label": "A gentle touch",
-    "date": "June 24",
-    "caption": "I was joining President Barack Obama for a whirlwind trip around Seattle. First stop was Air Force One landing at Sea-Tac Airport. The president got off the plane and quickly disappeared into a sea of people and Secret Service agents. I crouched down on the tarmac and caught a momentary glimpse of Obama shaking a little girl’s hand. Moments later, he was whisked off in a limo, and I followed him to his next stop in downtown Seattle.",
-    "credit": "Mike Siegel",
-    "aspect": "vertical"
-  },
-  {
-    "id": 2,
     "label": "An unexpected result",
     "date": "Nov. 8",
     "caption": "An election-night Republican rally at the Bellevue Hyatt seemed as if it would be a subdued affair, with Hillary Clinton predicted to win the presidency. But after sitting in the office watching Donald Trump win states, I messaged my wife before heading out: “Trump can win this thing.” The GOP gathering built to a crescendo, with people streaming in from all over the county, wanting to be part of history. And you could see it on the faces of people there. One part stunned surprise, one part validation of what they knew to be true, but everybody else refused to believe.",
@@ -16,12 +8,20 @@
     "aspect": "horizontal"
   },
   {
-    "id": 3,
+    "id": 2,
     "label": "Not what they expected",
     "date": "Nov. 8",
     "caption": "On election night, The Seattle Times goes all-hands-on-deck, sending photographers and reporters all over the county. I was assigned to a gathering on Capitol Hill for Pramila Jayapal, who was elected to Congress. But the event was overshadowed by the presidential race. The crowd, including schoolteacher Samantha Egelhoff, seemed confident Hillary Clinton would win. But as results continued to stream in, the venue’s name, the Optimism Brewing Company, seemed like a cruel irony.",
     "credit": "Lindsey Wasson",
     "aspect": "horizontal"
+  },
+  {
+    "id": 3,
+    "label": "A gentle touch",
+    "date": "June 24",
+    "caption": "I was joining President Barack Obama for a whirlwind trip around Seattle. First stop was Air Force One landing at Sea-Tac Airport. The president got off the plane and quickly disappeared into a sea of people and Secret Service agents. I crouched down on the tarmac and caught a momentary glimpse of Obama shaking a little girl’s hand. Moments later, he was whisked off in a limo, and I followed him to his next stop in downtown Seattle.",
+    "credit": "Mike Siegel",
+    "aspect": "vertical"
   },
   {
     "id": 4,
