@@ -57,6 +57,14 @@
   },
   {
     "id": 8,
+    "label": "Great Blue blur",
+    "date": "March 16",
+    "caption": "I was stalking a Great Blue Heron at the Ballard Locks while it was stalking fish. While I was photographing from above, the heron took off, but I had accidentally knocked the shutter speed down and failed to freeze the action — except for the legs. After cropping out most of a blurry bird, the resulting photo was beyond what I had hoped for.",
+    "credit": "Ken Lambert",
+    "aspect": "vertical"
+  },
+  {
+    "id": 9,
     "label": "A warm welcome",
     "date": "Feb. 8",
     "caption": "Students were greeted by 250 black men, from all walks of life, at the beginning of the school day at South Shore PK-8 School in Seattle. It was such a positive, uplifting thing to see, and the kids all seemed so surprised, excited and happy. Everyone was smiling and cheering — what a great way to start the day. I wish there could be more events like this. In September, a planned similar event at Seattle’s John Muir Elementary was canceled after the school received at least one threatening call.",
@@ -64,7 +72,7 @@
     "aspect": "horizontal"
   },
   {
-    "id": 9,
+    "id": 10,
     "label": "On the move",
     "date": "April 6",
     "caption": "Mindy Ames, a homeless camper under Interstate 5 on South Jackson Street, hurries to pack up as maintenance workers arrive to clear encampments. Campers moved their belongings to the sidewalk across the street, in front of an International District parking lot. This was part of a Seattle Times investigation written by Mike Baker titled, “Chaos, trash and tears: inside Seattle’s flawed homeless sweeps,” which highlighted the disorganization and confusion that plague cleanups of homeless encampments. The coverage helped spur action by human-rights groups and the Seattle City Council to address the issue.",
@@ -72,7 +80,7 @@
     "aspect": "horizontal"
   },
   {
-    "id": 10,
+    "id": 11,
     "label": "Let us in!",
     "date": "Aug. 15",
     "caption": "During a Seattle City Council meeting, demonstrators protesting the proposed North Precinct police headquarters filled the Council chambers. More people were outside, demanding access. The meeting room was filled to overflow. Still, the demonstrators wanted in. Two private security guards tried to keep the protesters (behind them) from gaining access.",
@@ -80,19 +88,11 @@
     "aspect": "horizontal"
   },
   {
-    "id": 11,
+    "id": 12,
     "label": "All dressed up",
     "date": "Feb. 15",
     "caption": "Dressed in vintage glam from head to well-heeled toe, Robbie Turner, the drag-queen persona of Seattle’s Jeremy Baird, is a fixture in the Seattle drag scene and also starred last year in the eighth season of “RuPaul’s Drag Race.” The things that stood out during our photo and video session in his Capitol Hill living room were Baird’s humor, kindness and incredible dress and jewelry collection. “I sing, and I dance and I act. I just like to have fun; I like to make people happy,” he said. “And those are the things that make people happy immediately.”",
     "credit": "Erika Schultz",
-    "aspect": "vertical"
-  },
-  {
-    "id": 12,
-    "label": "Great Blue blur",
-    "date": "March 16",
-    "caption": "I was stalking a Great Blue Heron at the Ballard Locks while it was stalking fish. While I was photographing from above, the heron took off, but I had accidentally knocked the shutter speed down and failed to freeze the action — except for the legs. After cropping out most of a blurry bird, the resulting photo was beyond what I had hoped for.",
-    "credit": "Ken Lambert",
     "aspect": "vertical"
   },
   {

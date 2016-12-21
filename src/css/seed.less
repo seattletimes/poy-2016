@@ -22,12 +22,17 @@ body {
     .flex(1);
   }
 
+  img {
+    width: 100%;
+  }
+
   @media @mobile {
+    margin-top: 33px;
     display: block;
     background: none;
 
     .right {
-      padding-top: 30px;
+      padding-top: 15px;
     }
   }
 }
@@ -123,6 +128,10 @@ p {
   padding: 60px 20px;
   .display-flex();
 
+  img {
+    width: 100%;
+  }
+
   @media @mobile {
     display: block;
     padding: 40px 15px;
@@ -201,6 +210,10 @@ nav {
         border: none;
       }
     }
+
+    @media @mobile {
+      margin-top: -30px;
+    }
   }
 }
 
@@ -209,4 +222,20 @@ nav {
   padding-top: 20px;
   font-family: @df-sans;
   font-size: 14px;
+}
+
+.share {
+  label {
+    color: #d3d3d3 !important;
+    background: #141416 !important;
+    padding: 9px 14px 7px 14px !important;
+  }
+
+  .left {
+    margin-left: 0px !important;
+  }
+
+  &.top.sharer-0 {
+    width: 100px !important;
+  }
 }
